@@ -1,17 +1,28 @@
-/* main start */
-.container{
+body{
     background-color: #F3F1FF;
 }
-.top-players{
+/* main start */
+main{
+    display: flex;
+    justify-content: center;
+}
+.container{
     background-color: #ffffff;
-    margin: 36px 285px 36px;
+    width: 870px;
+    padding: 33px;
+}
+.top-players{
+    margin-bottom: 33px;
 }
 .players-lebel{
     color: #562EFF;
+    padding-bottom: 33px;
+    margin: 0px;
 }
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
 }
 .player{
     display: flex;
@@ -21,4 +32,7 @@
 .player img{
     width: 56px;
     height: 56px;
+}
+.break{
+    border: 1px solid #d1d1d1;
 }
