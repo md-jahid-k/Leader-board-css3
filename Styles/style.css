@@ -1,0 +1,24 @@
+/* main start */
+.container{
+    background-color: #F3F1FF;
+}
+.top-players{
+    background-color: #ffffff;
+    margin: 36px 285px 36px;
+}
+.players-lebel{
+    color: #562EFF;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.player{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
