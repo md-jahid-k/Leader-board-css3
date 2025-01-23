@@ -4,17 +4,20 @@ body{
 /* main start */
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 21px;
 }
 .container{
     background-color: #ffffff;
     width: 870px;
     padding: 33px;
+    border-radius: 10px;
 }
 .top-players{
     margin-bottom: 33px;
 }
-.players-lebel{
+.section-lebel{
     color: #562EFF;
     padding-bottom: 33px;
     margin: 0px;
@@ -35,4 +38,40 @@ main{
 }
 .break{
     border: 1px solid #d1d1d1;
+    margin-bottom: 30px;
+}
+/*top blog start*/
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 26px;
+}
+.cards img{
+    width: 224px;
+    height: 127px;
+}
+.card{
+    display: flex;
+    gap: 16px;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+}
+.information p{
+    color: #9F9F9F;
+}
+.information a{
+    text-decoration: none;
+    color: #562EFF;
+}
+/*Course start*/
+.course{
+    display: grid;
+    row-gap: 53px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.info img{
+    width: 266px;
+    height: 141px;
 }
