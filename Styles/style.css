@@ -21,6 +21,7 @@ main{
     color: #562EFF;
     padding-bottom: 33px;
     margin: 0px;
+
 }
 .players{
     display: grid;
@@ -71,7 +72,92 @@ main{
     row-gap: 53px;
     grid-template-columns: repeat(3, 1fr);
 }
-.info img{
+.thamneil img{
     width: 266px;
     height: 141px;
+    margin-bottom: 20px;
+    /* box-shadow: 5px solid #9F9F9F; */
+}
+.info h3,p{
+    font-weight:normal;
+    font-size: 21px;
+    margin: 0px;
+    padding: 2.5px;
+}
+.info a{
+    color: #ED6B4F;
+    font-size: 15px;
+    font-weight: normal;
+    text-decoration: none;
+    margin-bottom: 7px;
+}
+.Rating{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items:center ;
+    margin-top: 16px;
+    justify-content: space-between;
+}
+.stars{
+    display: flex;
+    color: #FFC014;
+    /* width: 12.25px; */
+    /* height: 11.75px; */
+    align-items: center;
+}
+.stars span i{
+    color: #AEAEAE;
+}
+.stars p{
+    color: #AEAEAE;
+}
+/* duration */
+.duration{
+    display: flex;
+    align-items: center;
+    gap: 5.5px;
+    color: #ED6B4F;
+    background-color: #FEE5DF;
+    width: 98px;
+    height: 29.5px;
+    padding-left: 5px;
+    border-radius: 20px;
+}
+/* media queary */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .section-lebel{
+        text-align: center;
+    }
+    .players{
+        grid-template-columns: repeat(1 ,1fr);
+    }
+    .cards{
+        grid-template-columns: repeat(1 ,1fr);
+    }
+    .card{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .information{
+        align-items: center;
+    }
+    .course{
+        grid-template-columns: repeat(1 ,1fr);
+    }
+    .thamneil{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .info{
+        /* text-align: center */
+    }
+    .Rating{
+        justify-items: center;
+    }
 }
